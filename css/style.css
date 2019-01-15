@@ -1,0 +1,133 @@
+/*font-family: 'Source Sans Pro', sans-serif;
+Utiliza IMG si pretendes que la gente imprima la página y deseas que la imagen que sea incluida por defecto.
+Utiliza IMG(con alt) cuando la imagen tiene un importante significado semántico, tal como un icono de
+advertencia. Esto asegura que el significado de la imagen sea comunicado a todos los agentes de uso,
+incluyendo lectores de pantalla.
+Utiliza IMG si deseas que el navegador muestre una imagen en proporción al tamaño del texto.
+Utiliza IMG para múltiples imágenes superpuestas en IE6.
+Usar IMG en vez de background-image puede mejorar drásticamente el rendimiento de las animaciones sobre
+un fondo.
+CSS background-image
+
+Utiliza CSS background-image si la imagen no es parte del contenido.
+Utiliza CSS background-image cuando la imagen sustituye al texto
+Utiliza CSS background-image si pretendes que la gente imprima la página y NO deseas que la imagen que sea
+incluida por defecto.
+Utiliza CSS background-image si es necesario mejorar los tiempos de descarga.
+Utiliza CSS background-image si es necesario hacer visible solo una parte de la imagen.
+Utiliza CSS background-image combinado con CSS background-size:cover con el fin de estirar una imagen de
+fondo para cubrir la totalidad del contenedor. */
+
+body {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 1.5em;
+	letter-spacing: -.2px;
+	margin: 0;
+}
+
+h1 strong {
+	color: #026fff;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure {
+	margin: 0;
+}
+
+.header {
+	background-color: #1b2127;
+	color: white;
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header a {
+	align-items: center;
+	color: white;
+	display: flex;
+	font-family:  'Source Sans Pro', sans-serif; 
+	font-size: 1.5em;
+	height: inherit;
+	padding: 0 11px;
+	text-decoration: none;
+}
+
+.header ul {
+	display: flex;
+	height: inherit;
+}
+
+.header ul li {
+	height: inherit;
+}
+
+.menu {
+	height: inherit;
+}
+
+.hero {
+	height: 350px;
+	background-image: url('../img/me.jpg');
+	background-color: #1b2127;
+	background-size: 500px 400px;
+	/*los valores de background size representan el ancho y el alto*/
+	background-repeat: no-repeat;
+	background-position-x: right;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.portafolio {
+	background-color: #fafafa;
+}
+
+.project {
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 7px;
+	display: flex;
+	margin: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+.project-details {
+	width: 500px;
+}
+
+.project-imageWrap {
+	width: 500px;
+}
+
+.project-image {
+	width: 100%;
+}
+
+.footer {
+	background-color: #1b2127;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer img {
+	vertical-align: middle;
+}
